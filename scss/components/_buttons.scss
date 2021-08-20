@@ -6,28 +6,25 @@
   display: block;
   text-align: center;
   cursor: pointer;
+  box-shadow: $shadow;
+  width: fit-content;
+  margin: 0 auto;
 
   @media (max-width: 375px) {
     font-size: 12px;
+  }
+
+  @media (max-width: 460px) {
+    width: 100%;
   }
 }
 
 .kneth_button--gradient {
   background: $gradient;
   color: $light;
-  box-shadow: $shadow;
-  width: fit-content;
-  margin: 0 auto;
-  
-  @media (max-width: 460px) {
-    width: 100%;
-  }
 }
 
 .kneth_button--light {
   background: $light;
   color: $primary;
-  width: fit-content;
-  margin: 0 auto;
-  box-shadow: $shadow;
 }

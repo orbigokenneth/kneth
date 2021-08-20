@@ -58,10 +58,21 @@ button {
   display: block;
   text-align: center;
   cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 @media (max-width: 375px) {
   .kneth_button {
     font-size: 12px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_button {
+    width: 100%;
   }
 }
 
@@ -69,28 +80,11 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#2196F3), to(#00C1FF));
   background: linear-gradient(180deg, #2196F3 0%, #00C1FF 100%);
   color: #FFF;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-}
-@media (max-width: 460px) {
-  .kneth_button--gradient {
-    width: 100%;
-  }
 }
 
 .kneth_button--light {
   background: #FFF;
   color: #2196F3;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .kneth_title {
@@ -757,10 +751,24 @@ button {
 }
 
 .kneth_contact {
-  display: none;
   padding: 200px 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#2196F3), to(#00C1FF));
   background: linear-gradient(180deg, #2196F3 0%, #00C1FF 100%);
+}
+@media (max-width: 990px) {
+  .kneth_contact {
+    padding: 150px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .kneth_contact {
+    padding: 100px 50px 150px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_contact {
+    padding: 100px 30px;
+  }
 }
 .kneth_contact .kneth_title,
 .kneth_contact .kneth_para {
@@ -779,6 +787,19 @@ button {
           justify-content: center;
   margin-bottom: 30px;
 }
+@media (max-width: 720px) {
+  .kneth_form__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_form__inputs {
+    margin-bottom: 20px;
+  }
+}
 
 .kneth_form__input {
   padding: 20px;
@@ -788,8 +809,29 @@ button {
           flex: 1;
   outline: none;
 }
+@media (max-width: 720px) {
+  .kneth_form__input {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .kneth_form__input {
+    font-size: 14px;
+  }
+}
 .kneth_form__input ~ .kneth_form__input {
   margin-left: 30px;
+}
+@media (max-width: 720px) {
+  .kneth_form__input ~ .kneth_form__input {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_form__input ~ .kneth_form__input {
+    margin-top: 20px;
+  }
 }
 
 .kneth_form__textarea {
@@ -799,16 +841,39 @@ button {
   margin-bottom: 50px;
   outline: none;
 }
+@media (max-width: 460px) {
+  .kneth_form__textarea {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .kneth_form__textarea {
+    font-size: 14px;
+  }
+}
 
 .kneth_footer {
-  display: none;
   background: #000;
   padding: 50px;
   color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 520px) {
+  .kneth_footer {
+    padding: 50px 30px;
+  }
 }
 
 .kneth_footer__img {
@@ -826,7 +891,26 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 520px) {
+  .kneth_footer__copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_footer__copy {
+    font-size: 14px;
+  }
+}
 
 .kneth_copy {
   margin-right: 10px;
+}
+@media (max-width: 520px) {
+  .kneth_copy {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

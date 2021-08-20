@@ -1,11 +1,13 @@
 .kneth_footer {
-  display: none;
-
   background: $dark;
   padding: 50px;
   color: $light;
+
+  @media (max-width: 520px) {
+    padding: 50px 30px;
+  }
   
-  // @include flex-center-center;
+  @include flex-center-center;
   flex-direction: column;
 }
 
@@ -15,9 +17,21 @@
 
 .kneth_footer__copy {
   @include flex-center-center;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
 }
 
 .kneth_copy {
   margin-right: 10px;
-}
 
+  @media (max-width: 520px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
