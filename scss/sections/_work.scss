@@ -29,7 +29,7 @@
   background: $light;
   @include flex-center-center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 460px) {
     width: 100%;
   }
 }

@@ -372,6 +372,22 @@ button {
 .kneth_introduction .kneth_button {
   display: none;
 }
+@media (max-width: 990px) {
+  .kneth_introduction .kneth_button {
+    display: block;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 990px) and (max-width: 768px) {
+  .kneth_introduction .kneth_button {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 990px) and (max-width: 460px) {
+  .kneth_introduction .kneth_button {
+    margin-top: 50px;
+  }
+}
 
 .kneth_introduction__headshot {
   margin-right: 50px;
@@ -523,7 +539,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 460px) {
   .kneth_work__company {
     width: 100%;
   }
