@@ -119,7 +119,7 @@
   display: none;
 
   &.show {
-    @include flex-center-center;
+    @include flex-center-end;
     position: fixed;
     top: 0;
     left: 0;
@@ -130,5 +130,26 @@
     @media (min-width: 990px) {
       display: none;
     }
+  }
+}
+
+.kneth_nav_modal__links {
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: 460px) {
+    text-align: right;
+  }
+}
+
+.kneth_nav_modal__link {
+  letter-spacing: 3px;
+  font-size: 38px;
+  font-weight: $bold;
+  color: $light;
+  padding: 20px;
+
+  @media (max-width: 460px) {
+    padding: 20px 30px 20px 0;
   }
 }
