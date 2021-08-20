@@ -271,11 +271,11 @@
         <input type="hidden" name="_template" value="box">
 
         <div class="kneth_form__inputs">
-          <input autocomplete="off" type="text" class="kneth_form__input" placeholder="Name" required>
-          <input autocomplete="off" type="email" class="kneth_form__input" placeholder="Email" required>
+          <input name="Sender" autocomplete="off" type="text" class="kneth_form__input" placeholder="Name" required>
+          <input name="Email" autocomplete="off" type="email" class="kneth_form__input" placeholder="Email" required>
         </div>
 
-        <textarea autocomplete="off" name="" id="" cols="30" rows="5" class="kneth_form__textarea" placeholder="Message" required></textarea>
+        <textarea autocomplete="off" name="Message" id="" cols="30" rows="5" class="kneth_form__textarea" placeholder="Message" required></textarea>
         
         <button type="submit" class="kneth_button kneth_button--light">Send Message</button>
       </form>
@@ -294,11 +294,20 @@
     </div>
   </section>
 
-  </div> <!-- Wrapper End. -->
+  </div> <!-- Wrapper end. -->
+
+  <!-- Sent modal -->
+  <div class="kneth_modal_sent">
+    <div class="kneth_modal_sent__inner">
+      <img src="images/sent.png" alt="Envelope" class="kneth_modal_sent__img">
+      <p class="kneth_modal_sent__message">Sent message</p>
+    </div>
+  </div>
 
   <!-- Javascript -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/burget_modal.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="js/sent_modal.js"></script>
 </body>
 </html>
