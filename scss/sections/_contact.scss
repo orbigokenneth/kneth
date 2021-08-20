@@ -38,6 +38,13 @@
   font-size: 16px;
   flex: 1;
   outline: none;
+  border-bottom: 5px solid transparent;
+  transition: $effects;
+
+  &:hover,
+  &:focus {
+    border-bottom: 5px solid $body;
+  }
 
   @media (max-width: 720px) {
     width: 100%;
@@ -67,6 +74,13 @@
   font-size: 16px;
   margin-bottom: 50px;
   outline: none;
+  border-bottom: 5px solid transparent;
+  transition: $effects;
+
+  &:hover,
+  &:focus {
+    border-bottom: 5px solid $body;
+  }
 
   @media (max-width: 460px) {
     margin-bottom: 30px;

@@ -900,6 +900,12 @@ button {
       -ms-flex: 1;
           flex: 1;
   outline: none;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
+}
+.kneth_form__input:hover, .kneth_form__input:focus {
+  border-bottom: 5px solid #4F4F4F;
 }
 @media (max-width: 720px) {
   .kneth_form__input {
@@ -932,6 +938,12 @@ button {
   font-size: 16px;
   margin-bottom: 50px;
   outline: none;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
+}
+.kneth_form__textarea:hover, .kneth_form__textarea:focus {
+  border-bottom: 5px solid #4F4F4F;
 }
 @media (max-width: 460px) {
   .kneth_form__textarea {
