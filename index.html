@@ -26,7 +26,7 @@
   <!-- Header -->
   <header class="kneth_header">
     <div class="kneth_container kneth_container--1240">
-      <a href="" class="kneth_header__branding">
+      <a href="#kneth_wrapper" class="kneth_header__branding">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5043 40.0301L60 18.8007V8.11688e-06L29.4017 25.3674L0 0.899566V18.9806L26.3248 40.0301H2.71209e-06L3.44014e-06 55.4125H25.825L30.7925 60.0001L35.7599 55.4125H60V40.0301L33.5043 40.0301Z" fill="#2196F3"/>
         </svg>
@@ -34,10 +34,10 @@
 
       <nav class="kneth_nav">
         <div class="kneth_nav__links">
-          <a href="" class="kneth_nav__link">Work</a>
-          <a href="" class="kneth_nav__link">Services</a>
-          <a href="" class="kneth_nav__link">Tools</a>
-          <a href="" class="kneth_nav__link">Contact</a>
+          <a href="#work" class="kneth_nav__link scroll">Work</a>
+          <a href="#services" class="kneth_nav__link scroll">Services</a>
+          <a href="#tools" class="kneth_nav__link scroll">Tools</a>
+          <a href="#contact" class="kneth_nav__link scroll">Contact</a>
         </div>
 
         <a href="" class="kneth_button kneth_button--gradient">Download resume</a>
@@ -49,10 +49,10 @@
 
       <div class="kneth_nav_modal">
         <div class="kneth_nav_modal__links">
-          <a href="" class="kneth_nav_modal__link">Work</a>
-          <a href="" class="kneth_nav_modal__link">Services</a>
-          <a href="" class="kneth_nav_modal__link">Tools</a>
-          <a href="" class="kneth_nav_modal__link">Contact</a>
+          <a href="#work" class="kneth_nav_modal__link scroll">Work</a>
+          <a href="#services" class="kneth_nav_modal__link scroll">Services</a>
+          <a href="#tools" class="kneth_nav_modal__link scroll">Tools</a>
+          <a href="#contact" class="kneth_nav_modal__link scroll">Contact</a>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
   <section class="kneth_work">
     <div class="kneth_container kneth_container--900">
       <div class="kneth_head">
-        <h3 class="kneth_title">What I made</h3>
+        <h3 id="work" class="kneth_title">What I made</h3>
         <p class="kneth_para">This is one of the websites I made so far. Feel free to send me a message to see more of my designs. I am looking forward to fill this section out. </p>
       </div>
 
@@ -121,7 +121,7 @@
   <section class="kneth_service">
     <div class="kneth_container kneth_container--900">
       <div class="kneth_head">
-        <h3 class="kneth_title">What I offer</h3>
+        <h3 id="services" class="kneth_title">What I offer</h3>
         <p class="kneth_para">Are you looking for someone who can help you on designing your website? I can help you with that by providing the following services.</p>
       </div>
     </div>
@@ -161,7 +161,7 @@
   <section class="kneth_tools">
     <div class="kneth_container kneth_container--900">
       <div class="kneth_head">
-        <h3 class="kneth_title">What I use</h3>
+        <h3 id="tools" class="kneth_title">What I use</h3>
         <p class="kneth_para">These are the tools I use to get the job done. Looking forward to be more familiarized with other tools in the future.</p>
       </div>
     </div>
@@ -261,17 +261,17 @@
   <section class="kneth_contact">
     <div class="kneth_container kneth_container--900">
       <div class="kneth_head">
-        <h3 class="kneth_title">Let's Work</h3>
+        <h3 id="contact"  class="kneth_title">Let's Work</h3>
         <p class="kneth_para">Want to create a website or hire me on your company and we can help each other by creating beautiful things.</p>
       </div>
 
       <form action="" class="kneth_form">
         <div class="kneth_form__inputs">
-          <input type="text" class="kneth_form__input" placeholder="Name" required>
-          <input type="email" class="kneth_form__input" placeholder="Email" required>
+          <input autocomplete="off" type="text" class="kneth_form__input" placeholder="Name" required>
+          <input autocomplete="off" type="email" class="kneth_form__input" placeholder="Email" required>
         </div>
 
-        <textarea name="" id="" cols="30" rows="5" class="kneth_form__textarea" placeholder="Message" required></textarea>
+        <textarea autocomplete="off" name="" id="" cols="30" rows="5" class="kneth_form__textarea" placeholder="Message" required></textarea>
         
         <button type="submit" class="kneth_button kneth_button--light">Send Message</button>
       </form>
@@ -280,8 +280,10 @@
 
   <!-- Footer -->
   <section class="kneth_footer">
-    <img src="images/branding_footer.svg" alt="Website logo" class="kneth_footer__img">
-    
+    <a href="#kneth_wrapper">
+      <img src="images/branding_footer.svg" alt="Website logo" class="kneth_footer__img">
+    </a>
+
     <div class="kneth_footer__copy">
       <p class="kneth_copy">Copyright © 2021 KNETH</p>
       <p class="kneth_reserved">All rights reserved.</p>
@@ -289,6 +291,10 @@
   </section>
 
   </div> <!-- Wrapper End. -->
+
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/burget_modal.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>

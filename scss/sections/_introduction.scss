@@ -119,6 +119,8 @@
       margin-left: 15px;
     }
   }
+
+  @include beat;
 }
 
 .kneth_introduction__social__img {

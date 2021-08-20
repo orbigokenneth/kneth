@@ -28,3 +28,33 @@
   align-items: baseline;
   justify-content: start;
 }
+
+// Effects
+@mixin beat {
+  &:hover,
+  &:focus {
+    animation: beat 1s forwards;
+  }
+
+  @keyframes beat {
+    from {
+      tranform: scale(1);
+    }
+
+    45% {
+      transform: scale(1.1);
+    }
+
+    65% {
+      transform: scale(1);
+    }
+
+    75% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

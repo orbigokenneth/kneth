@@ -65,6 +65,52 @@ button {
   width: fit-content;
   margin: 0 auto;
 }
+.kneth_button:hover, .kneth_button:focus {
+  -webkit-animation: beat 1s forwards;
+          animation: beat 1s forwards;
+}
+@-webkit-keyframes beat {
+  from {
+    tranform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes beat {
+  from {
+    tranform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media (max-width: 375px) {
   .kneth_button {
     font-size: 12px;
@@ -124,6 +170,8 @@ button {
   left: 0;
   width: 100%;
   padding: 50px;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
 }
 @media (max-width: 460px) {
   .kneth_header {
@@ -141,10 +189,18 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.kneth_header.shadow {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
 
 .kneth_header__branding {
   position: relative;
   z-index: 1000;
+}
+.kneth_header__branding svg path {
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
 }
 .kneth_header__branding svg path.light {
   fill: #FFF;
@@ -186,6 +242,9 @@ button {
 .kneth_nav__link ~ .kneth_nav__link {
   margin-left: 80px;
 }
+.kneth_nav__link.active, .kneth_nav__link:hover {
+  color: #2196F3;
+}
 
 /* Burger nav */
 .kneth_burger-btn {
@@ -195,8 +254,8 @@ button {
   height: 60px;
   width: 60px;
   cursor: pointer;
-  -webkit-transition: ease-in-out 500ms all;
-  transition: ease-in-out 500ms all;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
   overflow: hidden;
 }
 @media (max-width: 1090px) {
@@ -225,8 +284,8 @@ button {
   height: 4px;
   width: 35px;
   background: #2196F3;
-  -webkit-transition: ease-in-out 500ms all;
-  transition: ease-in-out 500ms all;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
 }
 .kneth_burger-btn__dash::before, .kneth_burger-btn__dash::after {
   content: "";
@@ -234,8 +293,8 @@ button {
   height: 4px;
   width: 35px;
   background: #2196F3;
-  -webkit-transition: ease-in-out 500ms all;
-  transition: ease-in-out 500ms all;
+  -webkit-transition: ease-in-out 400ms all;
+  transition: ease-in-out 400ms all;
 }
 .kneth_burger-btn__dash::before {
   -webkit-transform: translateY(-10px);
@@ -308,8 +367,11 @@ button {
 }
 @media (max-width: 460px) {
   .kneth_nav_modal__link {
-    padding: 20px 30px 20px 0;
+    padding: 10px 30px 10px 0;
   }
+}
+.kneth_nav_modal__link:hover, .kneth_nav_modal__link:focus {
+  color: #4F4F4F;
 }
 
 .kneth_introduction {
@@ -477,6 +539,31 @@ button {
 @media (max-width: 460px) {
   .kneth_introduction__social ~ .kneth_introduction__social {
     margin-left: 15px;
+  }
+}
+.kneth_introduction__social:hover, .kneth_introduction__social:focus {
+  -webkit-animation: beat 1s forwards;
+          animation: beat 1s forwards;
+}
+@keyframes beat {
+  from {
+    tranform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  65% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

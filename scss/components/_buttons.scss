@@ -10,6 +10,8 @@
   width: fit-content;
   margin: 0 auto;
 
+  @include beat;
+
   @media (max-width: 375px) {
     font-size: 12px;
   }
