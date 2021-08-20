@@ -149,7 +149,7 @@ button {
 .kneth_header__branding svg path.light {
   fill: #FFF;
 }
-@media (min-width: 990px) {
+@media (min-width: 1090px) {
   .kneth_header__branding svg path.light {
     fill: #2196F3;
   }
@@ -160,7 +160,7 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 990px) {
+@media (max-width: 1090px) {
   .kneth_nav {
     display: none;
   }
@@ -199,7 +199,7 @@ button {
   transition: ease-in-out 500ms all;
   overflow: hidden;
 }
-@media (max-width: 990px) {
+@media (max-width: 1090px) {
   .kneth_burger-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,7 +283,7 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#2196F3), to(#00C1FF));
   background: linear-gradient(180deg, #2196F3 0%, #00C1FF 100%);
 }
-@media (min-width: 990px) {
+@media (min-width: 1090px) {
   .kneth_nav_modal.show {
     display: none;
   }
@@ -366,18 +366,18 @@ button {
 .kneth_introduction .kneth_button {
   display: none;
 }
-@media (max-width: 990px) {
+@media (max-width: 1090px) {
   .kneth_introduction .kneth_button {
     display: block;
     margin-top: 100px;
   }
 }
-@media (max-width: 990px) and (max-width: 768px) {
+@media (max-width: 1090px) and (max-width: 768px) {
   .kneth_introduction .kneth_button {
     margin-top: 80px;
   }
 }
-@media (max-width: 990px) and (max-width: 460px) {
+@media (max-width: 1090px) and (max-width: 460px) {
   .kneth_introduction .kneth_button {
     margin-top: 50px;
   }
@@ -474,11 +474,16 @@ button {
     margin-left: 20px;
   }
 }
+@media (max-width: 460px) {
+  .kneth_introduction__social ~ .kneth_introduction__social {
+    margin-left: 15px;
+  }
+}
 
 @media (max-width: 460px) {
   .kneth_introduction__social__img {
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -735,8 +740,8 @@ button {
 }
 @media (max-width: 460px) {
   .kneth_tools__img {
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
   }
 }
 
