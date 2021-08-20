@@ -1,0 +1,51 @@
+.kneth_introduction {
+  padding: 200px 50px 300px;
+
+  .kneth_container--900 {
+    @include flex-center-center;
+  }
+
+  .kneth_para {
+    text-align: left;
+  }
+
+  .kneth_button {
+    display: none;
+  }
+}
+
+.kneth_introduction__headshot {
+  margin-right: 50px;
+  height: 215px;
+  width: 215px;
+}
+
+.kneth_introduction__name-role {
+  @include flex-baseline-start;
+  margin-bottom: 10px;
+}
+
+.kneth_introduction__name {
+  font-size: 42px;
+  font-weight: $bold;
+  color: $primary;
+  margin-right: 20px;
+}
+
+.kneth_introduction__role {
+  font-size: 18px;
+  font-weight: $semibold;
+  text-transform: uppercase;
+  color: $body;
+}
+
+/* Socials */
+.kneth_introduction__socials {
+  @include flex-center-start;
+}
+
+.kneth_introduction__social {
+  ~ .kneth_introduction__social {
+    margin-left: 30px;
+  }
+}

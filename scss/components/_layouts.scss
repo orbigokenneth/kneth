@@ -1,9 +1,18 @@
+// Container
 .kneth_container {
-  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
 }
 
-.kneth_container--inner {
+.kneth_container--1240 {
+  max-width: 1240px;
+}
+
+.kneth_container--900 {
   max-width: 900px;
+}
+
+// Head
+.kneth_head {
+  margin-bottom: 100px;
 }

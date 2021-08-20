@@ -1,0 +1,14 @@
+.kneth_work {
+  background: $subtle;
+  padding: 200px 50px;
+}
+
+.kneth_work__companies {
+  @include flex-center-center;
+  margin-bottom: 100px;
+}
+
+.kneth_work__company {
+  padding: 50px;
+  background: $light;
+}

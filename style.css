@@ -22,13 +22,20 @@ img {
 }
 
 .kneth_container {
-  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
 }
 
-.kneth_container--inner {
+.kneth_container--1240 {
+  max-width: 1240px;
+}
+
+.kneth_container--900 {
   max-width: 900px;
+}
+
+.kneth_head {
+  margin-bottom: 100px;
 }
 
 .kneth_button {
@@ -36,11 +43,43 @@ img {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.kneth_button--gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#2196F3), to(#00C1FF));
   background: linear-gradient(180deg, #2196F3 0%, #00C1FF 100%);
   color: #FFF;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.kneth_button--ghost {
+  background: #FFF;
+  color: #2196F3;
+  border: 2px solid #2196F3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.kneth_title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.kneth_para {
+  font-size: 18px;
+  color: #4F4F4F;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Header */
@@ -58,4 +97,155 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.kneth_introduction {
+  padding: 200px 50px 300px;
+}
+.kneth_introduction .kneth_container--900 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.kneth_introduction .kneth_para {
+  text-align: left;
+}
+.kneth_introduction .kneth_button {
+  display: none;
+}
+
+.kneth_introduction__headshot {
+  margin-right: 50px;
+  height: 215px;
+  width: 215px;
+}
+
+.kneth_introduction__name-role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 10px;
+}
+
+.kneth_introduction__name {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2196F3;
+  margin-right: 20px;
+}
+
+.kneth_introduction__role {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4F4F4F;
+}
+
+/* Socials */
+.kneth_introduction__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.kneth_introduction__social ~ .kneth_introduction__social {
+  margin-left: 30px;
+}
+
+.kneth_work {
+  background: #F9F9F9;
+  padding: 200px 50px;
+}
+
+.kneth_work__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.kneth_work__company {
+  padding: 50px;
+  background: #FFF;
+}
+
+.kneth_service {
+  padding: 200px 50px;
+}
+
+.kneth_service__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.kneth_service_list {
+  width: 100%;
+}
+.kneth_service_list ~ .kneth_service_list {
+  margin-left: 30px;
+}
+
+.kneth_service_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+  margin-bottom: 30px;
+}
+
+.kneth_wireframe {
+  background: #2196F3;
+}
+
+.kneth_mockup {
+  background: #F9F9F9;
+}
+
+.kneth_coding {
+  background: #333333;
+}
+
+.kneth_service_list__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
