@@ -3,8 +3,132 @@
   background: $light;
   padding: 50px;
 
+  @media (max-width: 460px) {
+    padding: 30px;
+  }
+
   .kneth_container {
     @include flex-center-between;
   }
 }
 
+.kneth_header__branding {
+  position: relative;
+  z-index: 1000;
+
+  svg path.light {
+    fill: $light;
+
+    @media (min-width: 990px) {
+      fill: $primary;
+    }
+  }
+}
+
+.kneth_nav {
+  display: flex;
+
+  @media (max-width: 990px) {
+    display: none;
+  }
+}
+
+.kneth_nav__links {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.kneth_nav__link {
+  font-size: 14px;
+  font-weight: $bold;
+  letter-spacing: 1px;
+  color: $body;
+  text-transform: uppercase;
+
+  ~ .kneth_nav__link {
+    margin-left: 80px;
+  }
+}
+
+/* Burger nav */
+.kneth_burger-btn {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  transition: ease-in-out 500ms all;
+  overflow: hidden;
+
+  @media (max-width: 990px) {
+    @include flex-center-center;
+  }
+
+  &:active {
+    background: none;
+  }
+}
+
+.kneth_burger-btn.open .kneth_burger-btn__dash {
+  transform: translateX(-50px);
+}
+
+.kneth_burger-btn__dash {
+  height: 4px;
+  width: 35px;
+  background: $primary;
+  transition: ease-in-out 500ms all;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    background: $primary;
+    transition: ease-in-out 500ms all;
+  }
+
+  &::before {
+    transform: translateY(-10px);
+  }
+
+  &::after {
+    transform: translateY(10px);
+  }
+}
+
+.kneth_burger-btn.open {
+  background: transparent;
+}
+
+.kneth_burger-btn.open .kneth_burger-btn__dash::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background: $light;
+}
+
+.kneth_burger-btn.open .kneth_burger-btn__dash::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background: $light;
+}
+
+// Burger nav modal
+.kneth_nav_modal {
+  display: none;
+
+  &.show {
+    @include flex-center-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gradient;
+
+    @media (min-width: 990px) {
+      display: none;
+    }
+  }
+}

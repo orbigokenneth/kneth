@@ -1,9 +1,11 @@
 .kneth_footer {
+  display: none;
+
   background: $dark;
   padding: 50px;
   color: $light;
   
-  @include flex-center-center;
+  // @include flex-center-center;
   flex-direction: column;
 }
 
