@@ -663,9 +663,28 @@ button {
 }
 
 .kneth_tools {
-  display: none;
   padding: 200px 50px;
   background: #F9F9F9;
+}
+@media (max-width: 990px) {
+  .kneth_tools {
+    padding: 150px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .kneth_tools {
+    padding: 100px 50px 150px;
+  }
+}
+@media (max-width: 710px) {
+  .kneth_tools {
+    padding: 100px 50px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_tools {
+    padding: 100px 30px;
+  }
 }
 
 .kneth_tools__lists {
@@ -691,17 +710,50 @@ button {
       -ms-flex-pack: start;
           justify-content: start;
 }
+@media (max-width: 1100px) {
+  .kneth_tools__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .kneth_tools__list ~ .kneth_tools__list {
   margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .kneth_tools__list ~ .kneth_tools__list {
+    margin-top: 20px;
+  }
 }
 
 .kneth_tools__img {
   margin-right: 20px;
 }
+@media (max-width: 1100px) {
+  .kneth_tools__img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_tools__img {
+    width: 43px;
+    height: 43px;
+  }
+}
 
 .kneth_tools__name {
   font-size: 14px;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .kneth_tools__name {
+    display: none;
+  }
 }
 
 .kneth_contact {

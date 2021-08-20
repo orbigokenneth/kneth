@@ -1,8 +1,22 @@
 .kneth_tools {
-  display: none;
-
   padding: 200px 50px;
   background: $subtle;
+
+  @media (max-width: 990px) {
+    padding: 150px 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 100px 50px 150px;
+  }
+
+  @media (max-width: 710px) {
+    padding: 100px 50px
+  }
+
+  @media (max-width: 460px) {
+    padding: 100px 30px;
+  }
 }
 
 .kneth_tools__lists {
@@ -12,16 +26,39 @@
 .kneth_tools__list {
   @include flex-center-start;
 
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   ~ .kneth_tools__list {
     margin-top: 50px;
+
+    @media (max-width: 600px) {
+      margin-top: 20px;
+    }
   }
 }
 
 .kneth_tools__img {
   margin-right: 20px;
+
+  @media (max-width: 1100px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 460px) {
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .kneth_tools__name {
   font-size: 14px;
   font-weight: $semibold;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
