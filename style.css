@@ -24,6 +24,10 @@ button {
   border: none;
 }
 
+#kneth_wrapper {
+  padding-top: 170px;
+}
+
 .kneth_container {
   width: 100%;
   margin: 0 auto;
@@ -91,10 +95,19 @@ button {
   margin-bottom: 30px;
   text-align: center;
 }
+@media (max-width: 460px) {
+  .kneth_para {
+    font-size: 16px;
+  }
+}
 
 /* Header */
 .kneth_header {
   background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 50px;
 }
 @media (max-width: 460px) {
@@ -285,8 +298,22 @@ button {
 }
 
 .kneth_introduction {
-  display: none;
   padding: 200px 50px 300px;
+}
+@media (max-width: 990px) {
+  .kneth_introduction {
+    padding: 100px 50px 100px;
+  }
+}
+@media (max-width: 990px) {
+  .kneth_introduction {
+    padding: 50px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_introduction {
+    padding: 30px 30px 100px;
+  }
 }
 .kneth_introduction .kneth_container--900 {
   display: -webkit-box;
@@ -299,8 +326,22 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 710px) {
+  .kneth_introduction .kneth_container--900 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .kneth_introduction .kneth_para {
   text-align: left;
+}
+@media (max-width: 710px) {
+  .kneth_introduction .kneth_para {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 .kneth_introduction .kneth_button {
   display: none;
@@ -312,6 +353,17 @@ button {
   width: 215px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 990px) {
+  .kneth_introduction__headshot {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 710px) {
+  .kneth_introduction__headshot {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .kneth_introduction__name-role {
@@ -326,12 +378,29 @@ button {
           justify-content: start;
   margin-bottom: 10px;
 }
+@media (max-width: 710px) {
+  .kneth_introduction__name-role {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+}
 
 .kneth_introduction__name {
   font-size: 42px;
   font-weight: 700;
-  color: #2196F3;
+  color: #333333;
   margin-right: 20px;
+}
+@media (max-width: 710px) {
+  .kneth_introduction__name {
+    margin-right: 0;
+  }
 }
 
 .kneth_introduction__role {
@@ -353,9 +422,28 @@ button {
       -ms-flex-pack: start;
           justify-content: start;
 }
+@media (max-width: 710px) {
+  .kneth_introduction__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .kneth_introduction__social ~ .kneth_introduction__social {
   margin-left: 30px;
+}
+@media (max-width: 460px) {
+  .kneth_introduction__social ~ .kneth_introduction__social {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .kneth_introduction__social__img {
+    width: 43px;
+    height: 43px;
+  }
 }
 
 .kneth_work {

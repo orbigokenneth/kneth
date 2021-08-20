@@ -1,6 +1,10 @@
 /* Header */
 .kneth_header {
   background: $light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 50px;
 
   @media (max-width: 460px) {
