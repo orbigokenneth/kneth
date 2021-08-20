@@ -1,0 +1,10 @@
+/* Header */
+.kneth_header {
+  background: $light;
+  padding: 50px;
+
+  .kneth_container {
+    @include flex-center-between;
+  }
+}
+
