@@ -1,0 +1,33 @@
+.kneth_contact {
+  padding: 200px 50px;
+  background: $gradient;
+
+  .kneth_title,
+  .kneth_para {
+    color: $light;
+  }
+}
+
+.kneth_form__inputs {
+  @include flex-center-center;
+  margin-bottom: 30px;
+}
+
+.kneth_form__input {
+  padding: 20px;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+
+  ~ .kneth_form__input {
+    margin-left: 30px;
+  }
+}
+
+.kneth_form__textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  outline: none;
+}

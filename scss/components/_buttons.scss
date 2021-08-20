@@ -3,6 +3,8 @@
   font-size: 14px;
   font-weight: $bold;
   text-transform: uppercase;
+  display: block;
+  cursor: pointer;
 }
 
 .kneth_button--gradient {
@@ -17,4 +19,12 @@
   border: 2px solid $primary;
   width: fit-content;
   margin: 0 auto;
+}
+
+.kneth_button--light {
+  background: $light;
+  color: $primary;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: $shadow;
 }
