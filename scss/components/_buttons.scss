@@ -4,7 +4,12 @@
   font-weight: $bold;
   text-transform: uppercase;
   display: block;
+  text-align: center;
   cursor: pointer;
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
 }
 
 .kneth_button--gradient {
@@ -13,6 +18,10 @@
   box-shadow: $shadow;
   width: fit-content;
   margin: 0 auto;
+  
+  @media (max-width: 460px) {
+    width: 100%;
+  }
 }
 
 .kneth_button--light {

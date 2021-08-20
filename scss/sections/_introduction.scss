@@ -2,11 +2,15 @@
   padding: 200px 50px 300px;
 
   @media (max-width: 990px) {
-    padding: 100px 50px 100px;
+    padding: 150px 50px;
   }
 
-  @media (max-width: 990px) {
-    padding: 50px;
+  @media (max-width: 768px) {
+    padding: 100px 50px 150px;
+  }
+
+  @media (max-width: 710px) {
+    padding: 50px 50px 100px;
   }
 
   @media (max-width: 460px) {

@@ -1,16 +1,35 @@
 .kneth_work {
-  display: none;
-
   background: $subtle;
   padding: 200px 50px;
+
+  @media (max-width: 990px) {
+    padding: 150px 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 100px 50px;
+  }
+
+  @media (max-width: 460px) {
+    padding: 100px 30px
+  }
 }
 
 .kneth_work__companies {
   @include flex-center-center;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 80px;
+  }
 }
 
 .kneth_work__company {
   padding: 50px;
   background: $light;
+  @include flex-center-center;
+
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 }

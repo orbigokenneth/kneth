@@ -44,6 +44,11 @@ button {
 .kneth_head {
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .kneth_head {
+    margin-bottom: 50px;
+  }
+}
 
 .kneth_button {
   padding: 20px 60px;
@@ -51,7 +56,13 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   display: block;
+  text-align: center;
   cursor: pointer;
+}
+@media (max-width: 375px) {
+  .kneth_button {
+    font-size: 12px;
+  }
 }
 
 .kneth_button--gradient {
@@ -64,6 +75,11 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+}
+@media (max-width: 460px) {
+  .kneth_button--gradient {
+    width: 100%;
+  }
 }
 
 .kneth_button--light {
@@ -85,6 +101,11 @@ button {
   color: #333333;
   margin-bottom: 30px;
   text-align: center;
+}
+@media (max-width: 460px) {
+  .kneth_title {
+    font-size: 28px;
+  }
 }
 
 .kneth_para {
@@ -302,12 +323,17 @@ button {
 }
 @media (max-width: 990px) {
   .kneth_introduction {
-    padding: 100px 50px 100px;
+    padding: 150px 50px;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .kneth_introduction {
-    padding: 50px;
+    padding: 100px 50px 150px;
+  }
+}
+@media (max-width: 710px) {
+  .kneth_introduction {
+    padding: 50px 50px 100px;
   }
 }
 @media (max-width: 460px) {
@@ -447,9 +473,23 @@ button {
 }
 
 .kneth_work {
-  display: none;
   background: #F9F9F9;
   padding: 200px 50px;
+}
+@media (max-width: 990px) {
+  .kneth_work {
+    padding: 150px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .kneth_work {
+    padding: 100px 50px;
+  }
+}
+@media (max-width: 460px) {
+  .kneth_work {
+    padding: 100px 30px;
+  }
 }
 
 .kneth_work__companies {
@@ -464,10 +504,29 @@ button {
           justify-content: center;
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .kneth_work__companies {
+    margin-bottom: 80px;
+  }
+}
 
 .kneth_work__company {
   padding: 50px;
   background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 375px) {
+  .kneth_work__company {
+    width: 100%;
+  }
 }
 
 .kneth_service {

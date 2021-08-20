@@ -6,6 +6,10 @@
   color: $head;
   margin-bottom: 30px;
   text-align: center;
+
+  @media (max-width: 460px) {
+    font-size: 28px;
+  }
 }
 
 .kneth_para {
