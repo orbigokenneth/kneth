@@ -1,0 +1,25 @@
+.kneth_tools {
+  padding: 200px 50px;
+  background: $subtle;
+}
+
+.kneth_tools__lists {
+  @include flex-center-between;
+}
+
+.kneth_tools__list {
+  @include flex-center-start;
+
+  ~ .kneth_tools__list {
+    margin-top: 50px;
+  }
+}
+
+.kneth_tools__img {
+  margin-right: 20px;
+}
+
+.kneth_tools__name {
+  font-size: 14px;
+  font-weight: $semibold;
+}
