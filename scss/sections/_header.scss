@@ -7,6 +7,7 @@
   width: 100%;
   padding: 50px;
   transition: $effects;
+  z-index: 1000;
 
   @media (max-width: 460px) {
     padding: 30px;

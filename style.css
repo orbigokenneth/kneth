@@ -172,6 +172,7 @@ button {
   padding: 50px;
   -webkit-transition: ease-in-out 400ms all;
   transition: ease-in-out 400ms all;
+  z-index: 1000;
 }
 @media (max-width: 460px) {
   .kneth_header {
