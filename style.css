@@ -349,9 +349,9 @@ button {
 .kneth_introduction {
   padding: 390px 50px 300px;
 }
-@media (max-width: 990px) {
+@media (max-width: 1090px) {
   .kneth_introduction {
-    padding: 280px 50px 250px;
+    padding: 280px 50px 180px;
   }
 }
 @media (max-width: 768px) {
@@ -379,7 +379,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 800px;
+  max-width: 750px;
 }
 @media (max-width: 710px) {
   .kneth_introduction .kneth_container--900 {
@@ -387,6 +387,11 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media (max-width: 990px) {
+  .kneth_introduction .kneth_container--900 {
+    max-width: 900px;
   }
 }
 .kneth_introduction .kneth_para {

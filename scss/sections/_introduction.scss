@@ -1,8 +1,8 @@
 .kneth_introduction {
   padding: 390px 50px 300px;
 
-  @media (max-width: 990px) {
-    padding: 280px 50px 250px;
+  @media (max-width: 1090px) {
+    padding: 280px 50px 180px;
   }
 
   @media (max-width: 768px) {
@@ -20,10 +20,14 @@
   .kneth_container--900 {
     @include flex-center-center;
 
-    max-width: 800px;
+    max-width: 750px;
 
     @media (max-width: 710px) {
       flex-direction: column;
+    }
+
+    @media (max-width: 990px) {
+      max-width: 900px;
     }
   }
 
