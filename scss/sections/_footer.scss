@@ -1,4 +1,6 @@
 .kneth_footer {
+  @include flex-center-center;
+  flex-direction: column;
   background: $dark;
   padding: 50px;
   color: $light;
@@ -6,9 +8,6 @@
   @media (max-width: 520px) {
     padding: 50px 30px;
   }
-  
-  @include flex-center-center;
-  flex-direction: column;
 }
 
 .kneth_footer__img {

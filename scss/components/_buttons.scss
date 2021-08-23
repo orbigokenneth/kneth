@@ -6,11 +6,9 @@
   display: block;
   text-align: center;
   cursor: pointer;
-  box-shadow: $shadow;
   width: fit-content;
   margin: 0 auto;
-
-  @include beat;
+  box-shadow: $shadow;
 
   @media (max-width: 375px) {
     font-size: 12px;
@@ -24,9 +22,19 @@
 .kneth_button--gradient {
   background: $gradient;
   color: $light;
+
+  &:hover,
+  &:focus {
+    background: $primary;
+  }
 }
 
 .kneth_button--light {
   background: $light;
   color: $primary;
+
+  &:hover,
+  &:focus {
+    background: $subtle;
+  }
 }

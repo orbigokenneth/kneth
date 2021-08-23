@@ -30,31 +30,24 @@
 }
 
 // Effects
-@mixin beat {
+@mixin up {
   &:hover,
   &:focus {
-    animation: beat 1s forwards;
+    animation: up 600ms forwards;
   }
 
-  @keyframes beat {
+  @keyframes up {
     from {
-      tranform: scale(1);
+      transform: translateY(0);
     }
 
-    45% {
-      transform: scale(1.1);
-    }
-
-    65% {
-      transform: scale(1);
-    }
-
-    75% {
-      transform: scale(1.1);
+    50% {
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
     }
 
     100% {
-      transform: scale(1);
+      transform: translateY(0);
     }
   }
 }

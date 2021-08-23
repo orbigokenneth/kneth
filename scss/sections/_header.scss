@@ -9,8 +9,12 @@
   transition: $effects;
   z-index: 1000;
 
+  @media (max-width: 990px) {
+    padding: 30px 50px;
+  }
+
   @media (max-width: 460px) {
-    padding: 30px;
+    padding: 30px 30px;
   }
 
   .kneth_container {
@@ -26,6 +30,11 @@
   position: relative;
   z-index: 1000;
 
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
   svg path {
     transition: $effects;
   }
@@ -36,6 +45,11 @@
     @media (min-width: 1090px) {
       fill: $primary;
     }
+  }
+
+  @media (max-width: 990px) {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -75,7 +89,7 @@
   display: none;
   position: relative;
   z-index: 1000;
-  height: 60px;
+  height: 40px;
   width: 60px;
   cursor: pointer;
   transition: $effects;
