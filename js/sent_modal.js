@@ -2,7 +2,7 @@ const knethForm = document.querySelector(".kneth_form");
 const knethFormButton = document.querySelector(".kneth_form_button");
 
 knethForm.addEventListener("submit", e => {
-  knethFormButton.innerHTML = "Message Sent. Thank you.";
+  knethFormButton.innerHTML = "Message Sent";
   knethFormButton.classList.add("sent");
   
   setTimeout(() => {
