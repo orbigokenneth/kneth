@@ -477,11 +477,6 @@ button {
     margin-left: 20px;
   }
 }
-@media (max-width: 460px) {
-  .kneth_introduction__social ~ .kneth_introduction__social {
-    margin-left: 15px;
-  }
-}
 .kneth_introduction__social:hover, .kneth_introduction__social:focus {
   -webkit-animation: up 600ms forwards;
           animation: up 600ms forwards;
@@ -516,13 +511,6 @@ button {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@media (max-width: 460px) {
-  .kneth_introduction__social__img {
-    width: 40px;
-    height: 40px;
   }
 }
 
