@@ -640,7 +640,7 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     height: initial;
-    padding: 50px;
+    padding: 80px 0;
     width: 100%;
   }
 }
@@ -673,12 +673,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 100px;
 }
 @media (max-width: 768px) {

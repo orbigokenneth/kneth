@@ -19,7 +19,9 @@
 }
 
 .kneth_service__lists {
-  @include flex-center-between;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-bottom: 100px;
 
   @media (max-width: 768px) {
