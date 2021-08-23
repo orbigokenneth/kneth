@@ -48,6 +48,7 @@
   @include flex-center-center;
   padding: 100px 0;
   margin-bottom: 30px;
+  background: $subtle;
 
   @media (max-width: 900px) {
     padding: 80px 0;
@@ -61,18 +62,6 @@
   @media (max-width: 700px) {
     padding: 100px 0;
   }
-}
-
-.kneth_wireframe {
-  background: $placeholder;
-}
-
-.kneth_mockup {
-  background: $subtle;
-}
-
-.kneth_coding {
-  background: $head;
 }
 
 .kneth_service_list__title {
