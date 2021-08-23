@@ -20,6 +20,8 @@
   .kneth_container--900 {
     @include flex-center-center;
 
+    max-width: 800px;
+
     @media (max-width: 710px) {
       flex-direction: column;
     }

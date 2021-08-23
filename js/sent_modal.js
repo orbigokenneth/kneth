@@ -1,11 +1,13 @@
 const knethForm = document.querySelector(".kneth_form");
-const knethModalSent = document.querySelector(".kneth_modal_sent");
+const knethFormButton = document.querySelector(".kneth_form_button");
 
 knethForm.addEventListener("submit", e => {
-  knethModalSent.classList.add("sent-show");
+  knethFormButton.innerHTML = "Message Sent. Thank you.";
+  knethFormButton.classList.add("sent");
   
   setTimeout(() => {
-    knethModalSent.classList.add("sent-show");
+    knethFormButton.innerHTML = "Send Message";
+    knethFormButton.classList.remove("sent");
     knethForm.reset();
-  }, 2000);
+  }, 3000);
 });
