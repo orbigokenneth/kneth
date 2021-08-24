@@ -347,26 +347,26 @@ button {
 }
 
 .kneth_introduction {
-  padding: 390px 50px 300px;
+  padding: 350px 50px 300px;
 }
 @media (max-width: 1090px) {
   .kneth_introduction {
-    padding: 280px 50px 180px;
+    padding: 250px 50px 180px;
   }
 }
 @media (max-width: 768px) {
   .kneth_introduction {
-    padding: 260px 50px 100px;
+    padding: 220px 50px 100px;
   }
 }
 @media (max-width: 710px) {
   .kneth_introduction {
-    padding: 210px 50px 100px;
+    padding: 180px 50px 100px;
   }
 }
 @media (max-width: 460px) {
   .kneth_introduction {
-    padding: 160px 30px 100px;
+    padding: 140px 30px 100px;
   }
 }
 .kneth_introduction .kneth_container--900 {
@@ -387,11 +387,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media (max-width: 990px) {
-  .kneth_introduction .kneth_container--900 {
-    max-width: 900px;
   }
 }
 .kneth_introduction .kneth_para {
@@ -426,11 +421,6 @@ button {
   }
 }
 
-.kneth_introduction__headshot {
-  height: 215px;
-  width: 215px;
-  margin-right: 30px;
-}
 @media (max-width: 990px) {
   .kneth_introduction__headshot {
     margin-right: 0;
@@ -439,15 +429,21 @@ button {
 @media (max-width: 710px) {
   .kneth_introduction__headshot {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: -40px;
   }
 }
 
+/* Name */
+@font-face {
+  font-family: font;
+  src: url("./font/font.ttf");
+}
 .kneth_introduction__name {
-  font-size: 42px;
-  font-weight: 700;
-  color: #333333;
-  margin-bottom: 10px;
+  font-size: 100px;
+  color: #5b8581;
+  font-family: font !important;
+  letter-spacing: 3px;
+  margin-bottom: -20px;
 }
 @media (max-width: 710px) {
   .kneth_introduction__name {
