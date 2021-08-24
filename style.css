@@ -126,8 +126,8 @@ button {
   left: 0;
   width: 100%;
   padding: 50px;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
   z-index: 1000;
 }
 @media (max-width: 990px) {
@@ -165,8 +165,8 @@ button {
   height: 100%;
 }
 .kneth_header__branding svg path {
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 .kneth_header__branding svg path.light {
   fill: #FFF;
@@ -226,8 +226,8 @@ button {
   height: 40px;
   width: 60px;
   cursor: pointer;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
   overflow: hidden;
 }
 @media (max-width: 1090px) {
@@ -256,8 +256,8 @@ button {
   height: 4px;
   width: 35px;
   background: #2196F3;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 .kneth_burger-btn__dash::before, .kneth_burger-btn__dash::after {
   content: "";
@@ -265,8 +265,8 @@ button {
   height: 4px;
   width: 35px;
   background: #2196F3;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 .kneth_burger-btn__dash::before {
   -webkit-transform: translateY(-10px);
@@ -429,7 +429,7 @@ button {
 @media (max-width: 710px) {
   .kneth_introduction__headshot {
     margin-right: 0;
-    margin-bottom: -40px;
+    margin-bottom: -45px;
   }
 }
 
@@ -442,7 +442,6 @@ button {
   font-size: 100px;
   color: #5b8581;
   font-family: font !important;
-  letter-spacing: 3px;
   margin-bottom: -20px;
 }
 @media (max-width: 710px) {
@@ -471,6 +470,10 @@ button {
   }
 }
 
+.kneth_introduction__social {
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
+}
 .kneth_introduction__social ~ .kneth_introduction__social {
   margin-left: 30px;
 }
@@ -480,40 +483,10 @@ button {
   }
 }
 .kneth_introduction__social:hover, .kneth_introduction__social:focus {
-  -webkit-animation: up 600ms forwards;
-          animation: up 600ms forwards;
-}
-@-webkit-keyframes up {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes up {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .kneth_work {
@@ -602,26 +575,8 @@ button {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-}
-.kneth_work__company:hover, .kneth_work__company:focus {
-  -webkit-animation: up 600ms forwards;
-          animation: up 600ms forwards;
-}
-@keyframes up {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 @media (max-width: 540px) {
   .kneth_work__company {
@@ -633,6 +588,12 @@ button {
     padding: 80px 0;
     width: 100%;
   }
+}
+.kneth_work__company:hover, .kneth_work__company:focus {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .kneth_service {
@@ -894,8 +855,8 @@ button {
           flex: 1;
   outline: none;
   border-bottom: 5px solid transparent;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 .kneth_form__input:focus {
   border-bottom: 5px solid #4F4F4F;
@@ -932,8 +893,8 @@ button {
   margin-bottom: 50px;
   outline: none;
   border-bottom: 5px solid transparent;
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 .kneth_form__textarea:focus {
   border-bottom: 5px solid #4F4F4F;
@@ -950,8 +911,8 @@ button {
 }
 
 .kneth_form_button {
-  -webkit-transition: ease-in-out 400ms all;
-  transition: ease-in-out 400ms all;
+  -webkit-transition: ease-in-out 300ms all;
+  transition: ease-in-out 300ms all;
 }
 
 .kneth_form_button.sent {

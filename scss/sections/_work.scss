@@ -53,13 +53,18 @@
   background: $light;
   @include flex-center-center;
   align-self: stretch;
-
-  @include up;
+  transition: $effects;
 
   @media (max-width: 540px) {
     flex-direction: column;
     height: initial;
     padding: 80px 0;
     width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   }
 }

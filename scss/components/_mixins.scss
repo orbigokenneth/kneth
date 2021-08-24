@@ -28,26 +28,3 @@
   align-items: baseline;
   justify-content: start;
 }
-
-// Effects
-@mixin up {
-  &:hover,
-  &:focus {
-    animation: up 600ms forwards;
-  }
-
-  @keyframes up {
-    from {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-3px);
-      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
-}
