@@ -457,7 +457,7 @@ button {
 @media (max-width: 710px) {
   .kneth_introduction__name {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: -25px;
   }
 }
 
