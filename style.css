@@ -426,6 +426,10 @@ button {
   }
 }
 
+.kneth_introduction__headshot {
+  width: 250px;
+  height: 250px;
+}
 @media (max-width: 990px) {
   .kneth_introduction__headshot {
     margin-right: 0;
