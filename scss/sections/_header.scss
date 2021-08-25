@@ -90,13 +90,14 @@
   position: relative;
   z-index: 1000;
   height: 40px;
-  width: 60px;
+  width: fit-content;
   cursor: pointer;
   transition: $effects;
   overflow: hidden;
 
   @media (max-width: 1090px) {
     @include flex-center-center;
+    justify-content: flex-end !important;
   }
 
   &:active {

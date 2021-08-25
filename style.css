@@ -224,7 +224,9 @@ button {
   position: relative;
   z-index: 1000;
   height: 40px;
-  width: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
   -webkit-transition: ease-in-out 300ms all;
   transition: ease-in-out 300ms all;
@@ -241,6 +243,9 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
 }
 .kneth_burger-btn:active {
@@ -398,7 +403,7 @@ button {
 @media (max-width: 710px) {
   .kneth_introduction .kneth_para {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .kneth_introduction .kneth_button {
