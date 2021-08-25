@@ -957,10 +957,6 @@ button {
   }
 }
 
-.kneth_footer__img {
-  margin-bottom: 30px;
-}
-
 .kneth_footer__copy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,6 +967,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 @media (max-width: 520px) {
   .kneth_footer__copy {

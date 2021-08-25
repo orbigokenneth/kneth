@@ -10,12 +10,10 @@
   }
 }
 
-.kneth_footer__img {
-  margin-bottom: 30px;
-}
-
 .kneth_footer__copy {
   @include flex-center-center;
+  margin-top: 30px;
+
 
   @media (max-width: 520px) {
     flex-direction: column;
