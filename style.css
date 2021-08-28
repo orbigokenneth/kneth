@@ -384,7 +384,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 750px;
+  max-width: 780px;
 }
 @media (max-width: 710px) {
   .kneth_introduction .kneth_container--900 {
@@ -429,6 +429,8 @@ button {
 .kneth_introduction__headshot {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
 @media (max-width: 990px) {
   .kneth_introduction__headshot {
